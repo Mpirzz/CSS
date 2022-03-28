@@ -1,0 +1,81 @@
+/*SELECTORES*/
+/*
+
+    1:Selectores simoles
+        ·selectores elementales
+            -selctor universal -> *
+            -selctor de etiqueta -> nombre de la etiqueta (body,main,div...)
+
+        ·selectores de atributo
+            -id -> nombre de id id=""
+            -class -> nombre de la clase class=""
+
+    2:Selectores Compuestos
+        ·selectores agrupados
+            -   .class1,
+                .class2,
+                .class3{
+                    background-color:red;
+                }
+        ·selectores combinadores
+            - selectores decencientes 
+                div .title-2{
+                }
+            
+            - selector de hermano siguente ->  div + div  (elementos al mismo nivel son hermanos y si esta uno dento del otro son hijos )
+
+            - selctor hermanos -> .text-1 ~ p{ }tienen que estar al mismo nivel
+
+        ·selector hijo directo
+            
+            - .container > p {
+
+            }
+            
+*/          
+ 
+/*selector universal*/
+*{
+   background-color: rgb(248, 171, 158); 
+}
+
+/*seelctor de etiqueta*/
+h1{
+    background-color: tomato;
+}
+
+/*selector id*/
+#title{
+    background-color: aquamarine;
+}
+
+/*selector class*/
+.texto{
+    color: red;
+}
+
+/*selector agrupado*/
+.text1,
+.text2,
+.text3{
+    background-color: blue;
+}
+
+/*selector decendiente*/
+article .parraf{
+    background-color:blueviolet;
+}
+
+/*selctor hermanos, solo se selecciona el hermano*/
+.hermano1 ~ .hermano2 {
+    background-color: chocolate;
+}
+
+/*seelctor hijo directo, tiene que estar dentro de una etqiueta para ser hijo directo*/
+.container > p{
+    color: red;   
+}
+
+.container > h1{
+    font-size: medium;
+}
